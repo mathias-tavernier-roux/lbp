@@ -1,0 +1,1024 @@
+*, a{
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    overflow-wrap: break-word;
+    --main-color:#0d6efd;  
+    --bg-color: #eef4f7;
+    --red-color:#dc3545;
+}
+
+main{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%;  
+}
+
+                                    /* ACCUEIL */
+.main_accueil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    width: 100%;
+	min-height: calc(100vh - 131.6px);
+}
+
+.main_accueil h1{
+    color: rgb(116, 116, 116);
+    text-align: center;
+    margin: 35px 0 16px 0;
+}
+
+.container_search{
+    display: flex;
+    background-color: var(--main-color);
+    padding: 20px 20px 5px 20px;
+    margin-top: 10px;
+}
+
+.recherche{
+    display: flex;
+}
+
+.main_accueil .bouton{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.search_accueil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+.search_accueil input, .search_accueil select, .search_accueil button{
+    width: 380px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.annonces_accueil{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 75%;
+    max-width: 1250px;
+    margin-bottom: 40px;
+}
+
+.annonces_accueil img{
+    height: 180px;
+    padding: 10px 0 0 0;
+    
+}
+
+.annonces_accueil .titre{
+    font-size: 1.4em;
+    margin: -5px 0 9px 0;
+    text-align: center;
+}
+
+.annonces_accueil .prix{
+    margin: 4px 0;
+}
+
+.annonces_accueil .categorie{
+    margin: 4px 0;
+    
+}
+
+.annonces_accueil .depuis{
+    margin: 4px 0 16px 0;
+    color: var(--red-color);
+    font-size: 0.9em;
+}
+
+
+.annonces_accueil .card{
+    margin: 10px;
+}
+
+
+                                /* INSCRIPTION */
+.register_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+    background-color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+	min-height: calc(100vh - 170px);
+}
+
+.register_page h1{
+    color: var(--main-color);
+}
+
+.register_form{
+    width: 400px;
+    background-color: white;
+    padding: 15px;
+    margin: 48px 0;
+}
+
+                                /* CONNEXION */
+.login_page, .annonce_modif_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+    background-color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+	min-height: calc(100vh - 170px);
+}
+
+.login_page h1, .annonce_modif_page h1{
+    color: var(--main-color);
+}
+
+.login_form, .annonce_modif_form{
+    width: 400px;
+    background-color: white;
+    padding: 15px;
+    margin: 110px 0;
+}
+
+                    /* MODIFIER PROFIL UTILISATEUR */
+.modif_profil_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+	min-height: calc(100vh - 170px);
+}
+
+.modif_profil_page h1{
+    font-size: 1.9em;
+}
+
+.modif_profil_form{
+    width: 400px;
+    background-color: white;
+    padding: 15px;
+    margin: 48px 0;
+}
+
+.modif_profil_form input{
+    margin-bottom: 7px;
+}
+           
+/* ADRESSE UTILISATEUR */
+.modif_adresse_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+	min-height: calc(100vh - 170px);
+}
+
+.modif_adresse_page h1{
+    font-size: 1.9em;
+}
+
+.modif_adresse_form{
+    width: 400px;
+    background-color: white;
+    padding: 15px;
+    margin: 84px 0;
+}
+
+.modif_adresse_form input{
+    margin-bottom: 7px;
+}
+
+                    /* CHOIX DE CREATION DE BOUTIQUE */
+.creer_boutique_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+	min-height: calc(100vh - 170px);
+}
+
+.creer_boutique_page h1{
+    margin: 25px 0 33px 0;
+    font-size: 1.9em;
+}
+
+.creer_boutique{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.creer_boutique h2 {
+    font-size: 1.7em;
+    color: var(--red-color);
+    margin: 25px 0 25px 0;
+    padding: 10px;
+}
+
+.creer_boutique p{
+    color: rgb(94, 94, 94);
+}
+
+.creer_boutique .pro {
+width: 400px;
+height: 250px;
+background-color: white;
+margin: 10px;
+}
+
+.creer_boutique .pro:hover{
+    background-color: rgb(226, 226, 226);
+    transition: 0.5s all;
+}
+
+
+.creer_boutique .par{
+    width: 400px;
+    height: 250px;
+    background-color: white;
+    margin: 10px;
+}
+
+.creer_boutique .par:hover{
+    background-color: rgb(226, 226, 226);
+    transition: 0.5s all;
+}
+
+.comment{
+    margin-bottom: 50px;
+}
+
+                    /* Formulaire de création de boutique */
+.register_boutique_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+}
+
+.register_boutique_page h1{
+    font-size: 1.9em;
+    margin-bottom: 17px;
+}
+
+.register_boutique_form{
+    width: 400px;
+    background-color: white;
+    padding: 15px;
+    margin: 40px 0;
+}
+
+.register_boutique_form input{
+    margin-bottom: 7px;
+}
+
+                                /* ACCUEIL BOUTIQUE */
+.boutique_accueil_main{
+    background-color: var(--bg-color);
+    text-align: center;
+    width: 100%;
+    min-height: calc(100vh - 131.6px);
+}
+
+.boutique_accueil_main h1{
+    margin: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.boutique_accueil{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+}
+
+.boutique_accueil .profil{
+    width: 25%;
+    min-width: 250px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid rgb(206, 206, 206);
+    margin-bottom: 71px;
+}
+
+.boutique_accueil .profil p{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 0.3em;
+}
+
+.boutique_accueil .profil p{
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.boutique_accueil .profil img{
+    width: 100%;
+}
+
+.boutique_accueil .note{
+    border-top: 1.5px solid rgb(206, 206, 206);
+    border-bottom: 1.5px solid rgb(206, 206, 206);
+}
+
+.boutique_accueil .modifier a{
+    margin: 10px 10px;
+    width: 85%;
+}
+
+.boutique_accueil .annonces{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.annonces .annonce{
+    margin: 7px;
+    border: 1px solid white;
+    transition: all 0.4s;
+    background-color: white;
+    margin-bottom: 20px;
+    height: 311px;
+    width: 240px;
+}
+
+.annonces .annonce:hover{
+    background-color: rgb(248, 246, 246);
+    border: 1px solid rgb(248, 246, 246);
+    border-radius: 1px;
+    transition: all 0.4s;
+}
+
+.annonces .annonce img{
+    width: 230px;
+    height: 190px;
+    padding-top: 5px;
+}
+
+.annonce .titre{
+    color: black;
+    font-size: 1.2em;
+    margin: 3px 0;
+    padding-left: 2px;
+    overflow-wrap: break-word;
+}
+
+.annonce .prix{
+    color: var(--main-color);
+    font-size: 1em;
+    padding-left: 2px;
+    padding-bottom: 2px;
+}
+
+.annonce .categorie{
+    color: rgb(80, 80, 80);
+}
+
+.annonce .date_annonce{
+    color: var(--red-color);
+}
+
+                            /* PARAMETRES DE LA BOUTIQUE PRO */
+.param_boutique_pro_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+	min-height: calc(100vh - 131.6px);
+}
+
+.param_boutique_pro_page h1{
+    color: var(--main-color);
+    font-size: 2em;
+}
+
+.param_boutique_pro_form{
+    width: 400px;
+    background-color:white;
+    padding: 15px;
+    margin: 40px;
+    font-size: 1.1em;
+}
+
+.param_boutique_pro_form input, .param_boutique_pro_form select, .param_boutique_pro_form textarea{
+    margin-bottom: 7px;
+}
+
+                    /* PARAMETRES DE LA BOUTIQUE DE PARTICULIER */
+.param_boutique_par_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+	min-height: calc(100vh - 170px);
+}
+
+.param_boutique_par_page h1{
+    font-size: 1.9em;
+}
+
+.param_boutique_par_form{
+    width: 400px;
+    background-color:white;
+    padding: 15px;
+    margin: 95px;
+    font-size: 1.1em;
+}
+
+.param_boutique_par_form input, .param_boutique_par_form select, .param_boutique_par_form textarea{
+    margin-bottom: 7px;
+}
+                            /* VENDRE (particuliers et pro) */
+.vendre_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+}
+
+.vendre_page h1{
+    color: var(--main-color);
+    font-size: 2em;
+}
+
+.vendre_form{
+    width: 400px;
+    background-color:white;
+    padding: 15px;
+    margin: 40px;
+    font-size: 1.1em;
+}
+
+.vendre_form input, .vendre_form select, .vendre_form textarea{
+    margin-bottom: 10px;
+}
+
+.vendre_form a{
+    width: 100%;
+}
+
+                           /* VENDRE (particuliers et pro) */
+.vendre_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+}
+
+.vendre_page h1{
+    color: var(--main-color);
+    font-size: 2em;
+}
+
+.vendre_form{
+    width: 400px;
+    background-color:white;
+    padding: 15px;
+    margin: 40px;
+    font-size: 1.1em;
+}
+
+.vendre_form input, .vendre_form select, .vendre_form textarea{
+    margin-bottom: 10px;
+}
+
+.vendre_form a{
+    width: 100%;
+}
+
+                                /* PROFIL USER */
+.profil_profil{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    justify-content: center;
+    align-items: center;
+	min-height: calc(100vh - 170px);
+}
+
+.profil_profil h1{
+    margin: 20px 0 5px 0;
+    font-size: 1.9em;
+}
+
+.profil_user{
+    display: flex;
+    background-color: white;
+    margin: 56px 0 40px 0;
+    justify-content: center;
+    align-items:flex-start;
+    min-width: 570px;
+    box-shadow: 0 0 10px grey;
+    border-radius: 7px;
+    line-height: 2em;
+    
+}
+
+.profil_user .nom{
+    font-family: cursive;
+    margin-top: 11px;
+    font-size: 1.4em;
+}
+
+.profil_user .ville{
+    color: grey;
+    margin: 12px 0 18px 0;
+}
+
+.profil_user .achat{
+    margin-bottom: 7px;
+}
+
+.profil_user .photo{
+    width: 50%;
+    min-width: 280px;
+}
+
+.profil_user .photo img{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    height: 200px;
+    width: 280px;
+}
+
+.profil_user .description{
+    width: 50%;
+    min-width: 280px;
+    text-align: center;
+}
+
+.profil_profil .boutique{
+    display: flex;
+    justify-content: center;
+    min-width: 600px;
+    margin-bottom: 45px;
+}
+
+                                /* VOIR ANNONCE  */                    
+.boutique_par_page{
+    width: 100%;
+    background-color: var(--bg-color);
+	min-height: calc(100vh - 170px);
+}
+
+.boutique_par_page h1{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(71, 71, 71);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.boutique_par_container{
+    display: flex;
+    justify-content: center;
+}
+
+.boutique_par{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 90%;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    min-width: 800px;
+    max-width: 1000px;
+}
+
+.photo_container{
+    display: flex;
+    justify-content: center;  
+    width: 63%;
+}
+
+.photo_container img{
+    width: 90%;
+    border-radius: 2px;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.description_container{
+    width: 37%;
+    padding-top: 0px;
+}
+
+.description_container div{
+    padding: 0 10px;
+    margin: 7px 0;
+}
+
+.description_container .titre{
+    text-align: center;
+    font-size: 1.1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0;
+    padding-top: 6px;
+}
+
+.description_container .description{
+    border-top: 1px solid rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding: 6px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(116, 114, 114);
+}
+
+.description_container .livraison{
+    font-size: 0.9em;
+}
+
+.description_container .prix{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.description_container .date_annonce{
+    font-size: 0.9em;
+    color: var(--red-color);
+    padding-bottom: 10px;
+}
+
+.ajouter_panier a{
+    color: white;
+    padding: 3px 3px 4px 3px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+}
+
+.ajouter_panier :hover{
+    color: var(--main-color);
+    padding: 3px 3px 4px 3px;
+    background-color: white;
+    border: 1px solid var(--main-color);
+}
+
+.modifier a{
+    color: white;
+    padding: 3px 3px 4px 3px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+}
+
+.modifier :hover{
+    color: var(--main-color);
+    padding: 3px 3px 4px 3px;
+    background-color: white;
+    border: 1px solid var(--main-color);
+}
+
+.favoris a{
+    color: #6c757d;
+    background-color: white;
+    padding: 2px 4px 3px 4px;
+    border: 1px solid #6c757d;
+    margin-bottom: 12px;
+}
+
+.supprimer button{
+    padding: 2px 4px;
+    background-color: var(--red-color);
+    margin-bottom: 12px;
+}
+
+.description_boutique_par{
+    background-color: white;
+    margin-bottom: 17px;
+    border-radius: 2px;
+}
+
+.boutique_boutique_par{
+    background-color: white;
+    border-radius: 2px;
+    text-align: center;
+}
+.boutique_boutique_par img{
+    width: 70%;
+    
+}
+
+.boutique_boutique_par .boutique{
+    padding-top: 7px;
+    font-size: 1.1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boutique_boutique_par .boutique_nom{
+    color: rgb(71, 71, 71);
+}
+
+.boutique_boutique_par .boutique_image{
+    display: flex;
+    justify-content: center;
+}
+
+.boutique_boutique_par .voir_boutique a{
+    color: white;
+    padding: 3px 3px 4px 3px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.boutique_boutique_par .voir_boutique :hover{
+    color: var(--main-color);
+    padding: 3px 3px 4px 3px;
+    background-color: white;
+    border: 1px solid var(--main-color);
+}
+
+.annonce_modif_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+}
+
+.annonce_modif_page h1{
+    font-size: 1.9em;
+    margin-bottom: 12px;
+}
+
+.annonce_modif_form{
+    width: 400px;
+    background-color: white;
+    padding: 15px;
+    margin: 48px 0;
+}
+
+.annonce_modif_form input, .annonce_modif_form textarea, .annonce_modif_form select{
+    margin-bottom: 7px;
+}
+
+                                            /* PANIER */
+.panier_page {
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	min-height: calc(100vh - 170px)!important;
+}
+
+td
+{
+vertical-align: middle;
+text-align: center;
+}
+th
+{
+text-align: center;
+}
+.panier-p
+{
+    margin-bottom: 0;
+}
+
+                                            /* PAIEMENT */
+.paiement_page{
+    background-color: var(--bg-color);
+    width: 100%;
+}
+
+.paiement h2{
+    margin: 5px 0;
+    text-align: center;
+}
+                                        
+.paiement_page .livraison{
+    width: 440px;
+    background-color: white;
+    padding: 5px 20px 20px 20px;
+    margin: 20px;
+}
+
+.container_livraison{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.container_commande{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recapitulatif_commande{
+    width: 440px;
+    background-color: white;
+    padding: 5px 20px 20px 20px;
+    margin: 20px 0 40px 0;
+}    
+                        
+.paiement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.paiement input, .paiement button{
+    width: 400px;
+}
+
+.card{
+    width: 440px;
+    padding: 5px 20px 20px 20px;
+    margin-bottom: 20px;
+}
+
+#card-elements{
+    height: 40px;
+    padding: 10px;
+}
+
+                                /* PANIER */
+.panier_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+}
+
+.panier_page h1{
+    font-size: 1.9em;
+}
+
+.panier_tab{
+    width: 1000px;
+    background-color:white;
+    padding: 15px;
+    margin: 95px;
+    font-size: 1.1em;
+}
+
+                        /* HISTORIQUE DES COMMANDES */
+.historique_commande_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+    min-height: calc(100vh - 170px);
+}
+
+.historique_commande_page h1{
+font-size: 1.9em;
+}
+
+.historique_commande_tab{
+    width: 800px;
+    background-color:white;
+    padding: 15px;
+    margin: 95px;
+    font-size: 1.1em;
+}
+
+                            /* MESSAGES DE SUCCESS */
+.success_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    width: 100%;
+    text-align: center;
+    min-height: 74vh;
+}
+
+.success_container{
+    width: 800px;
+    background-color:white;
+    padding: 15px;
+    margin: 95px;
+    font-size: 1.1em;
+}
+
+.success_page h1{
+    font-size: 2.1em;
+    margin: 25px 0;
+}
+
+
+
+                                /* FOOTER */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--main-color);
+    line-height: 1.7em;
+}
+
+footer a{
+    color: rgb(230, 230, 230);
+}
+
+footer a:hover{
+    color: white;
+}
+
+footer .logo{
+    margin-top: 5px;
+    margin-left: 3%;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+
+footer .login{
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+footer .login a{
+    font-size: 16px;
+}
+
+footer .login div{
+    font-family: 'Ubuntu Mono', monospace;
+    color: white;
+}
+
+footer .apropos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+footer .apropos a{
+    font-size: 16px;
+}
+footer .apropos div{
+    font-family: 'Ubuntu Mono', monospace;
+    color: white;
+}
+footer .social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 3%;
+    margin-top: 5px;
+    color: white;
+}
+footer .social div{
+    font-family: 'Ubuntu Mono', monospace;
+    color: white;
+}
+footer .social ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 8px;
+}
+
+footer .social li{
+    display: flex;
+justify-content: center;
+    margin: 0 15%;
+}
